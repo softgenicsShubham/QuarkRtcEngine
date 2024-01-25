@@ -12,8 +12,9 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
-        
+
       }}>
+
         <Stack.Screen
           name='LiveStreaming'
           component={LiveStreaming}
@@ -21,13 +22,7 @@ const App = () => {
             headerShown: false
           }}
         />
-        <Stack.Screen
-          name='LiveStream'
-          component={LiveStream}
-          options={{
-            headerShown: false
-          }}
-        />
+
 
         <Stack.Screen
           name='Starting'
@@ -36,6 +31,17 @@ const App = () => {
             headerShown: false
           }}
         />
+
+        <Stack.Screen
+          name='LiveStream'
+          component={LiveStream}
+          options={{
+            headerShown: false
+          }}
+        />
+
+
+
 
       </Stack.Navigator>
     </NavigationContainer>
